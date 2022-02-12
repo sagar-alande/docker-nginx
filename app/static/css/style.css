@@ -1,3 +1,30 @@
 body {
     font-family: Helvetica, "Helvetica Neue", sans-serif;
 }
+
+.bluish{
+    background-color:#1B7380;
+    color: white;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.current{
+    font-weight: bold;
+    margin: 20px;
+    padding: 20px;
+}
+
+.contain{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.pic{
+    text-align: center;
+}
+

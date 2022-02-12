@@ -7,11 +7,24 @@
         <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
         <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
 
-        <title>{% block title %}{% endblock %}This is {{ name }} Website</title>
+        <title>This is {{ name }} Website</title>
     {% endblock %}
 
 </head>
-<body>
-My name is: {{ name }}
+<body background="https://wallpapershome.com/images/pages/pic_h/4883.jpg">
+    <div id="main_header" class="bluish" >
+        <h1>Classwork 10th Feb-Webpage</h1>
+    </div>
+    <div id="main_contain" class="contain">
+        <div id="information" class="current">
+            <p>Student Name: {{ name }}</p>
+            <p>College: {{ school }}</p>
+            <p>Enrolled For: {{ edu }}</p>
+            <p>Specialization In: {{ Specs }}</p>
+        </div>
+        <div id="image" class="pic">
+            <img src="https://0.academia-photos.com/23631166/16350915/16737134/s200_sagar.alande.jpg" alt="Sagar Alande">
+        </div>
+    </div>
 </body>
 </html>
