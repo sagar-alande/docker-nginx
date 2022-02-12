@@ -7,4 +7,7 @@ class IndexController(ControllerBase):
     @staticmethod
     def get():
         name = "Sagar Alande"
-        return render_template('index.html', name=name)
+        school="New Jersey Institute of Technology"
+        edu="Masters"
+        Specs="Data Science"
+        return render_template('index.html', name=name, school=school, edu=edu, Specs=Specs)
