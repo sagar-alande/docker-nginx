@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    {% block head %}
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
+
+        <title>This is {{ name }} Website</title>
+    {% endblock %}
+
+</head>
+<body background="https://wallpapercave.com/wp/wp6784386.jpg">
+<div class="container">
+    <div class="row">
+        <header class="p-1 mb-5">
+            <nav class="navbar navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">My First Bootstrap Site</a>
+                    <ul class="nav nav-pills">
+                        <li class="nav-item"><a href="/" class="nav-link" aria-current="page">Home</a></li>
+                        <li class="nav-item"><a href="/about" class="nav-link" aria-current="page">About</a></li>
+                        <li class="nav-item"><a href="/fpat" class="nav-link active">F-Pattern</a></li>
+                    </ul>
+                    <!-- <ul class="navbar-nav  nav-pills">
+                          <li class="nav-item">
+                              <a class="nav-link" aria-current="page" href="/">Home</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="/about">About</a>
+                          </li>
+                      </ul>-->
+                </div>
+            </nav>
+        </header>
+    </div>
+    <div class="bluish row">
+        <h1>Introduction to Web Development</h1>
+    </div>
+
+    <div class="row">
+        <p>Web programming, also known as web development, is the creation of dynamic web applications. Examples of web
+            applications are social networking sites like Facebook or e-commerce sites like Amazon.
+        </p>
+        <p>
+            The good news is that learning web development is not that hard!
+        </p>
+        <p>
+            In fact, many argue it’s the best form of coding for beginners to learn. It’s easy to set up, you get
+            instant
+            results and there’s plenty of online training available.
+        </p>
+        <p>
+            A lot of people learn web coding because they want to create the next Facebook or find a job in the
+            industry.
+            But it’s also a good choice if you just want a general introduction to coding, since it’s super easy to get
+            started. No matter whether you’re looking for a career or just want to learn coding, learning how to develop
+            for
+            the web is for you. It’s one of the smartest decisions you will ever make!
+        </p>
+        <p>
+            <strong>Web Development Overview</strong>
+        </p>
+        <p>
+            There are two broad divisions of web development – front-end development (also called client-side
+            development)
+            and back-end development (also called server-side development).
+            Front-end development refers to constructing what a user sees when they load a web application – the
+            content,
+            design and how you interact with it. This is done with three codes – HTML, CSS and JavaScript.
+        </p>
+        <p>
+            HTML, short for <a href="https://www.codeconquest.com/tutorials/html/">Hyper Text Markup Language</a>, is a
+            special code for ‘marking up’ text in order to turn it into a web page. Every web page on the net is written
+            in
+            HTML, and it will form the backbone of any web application. CSS, short for <a
+                href="https://www.codeconquest.com/tutorials/css/">Cascading Style Sheets</a>, is a code for setting
+            style
+            rules for the appearance of web pages. CSS handles the cosmetic side of the web. Finally, <a
+                href="https://www.codeconquest.com/tutorials/javascript/">JavaScript</a> is a scripting language that’s
+            widely used to add functionality and interactivity to web pages.
+        </p>
+        <p>
+            Back-end development controls what goes on behind the scenes of a web application. A back-end often uses a
+            database to generate the front-end.
+        </p>
+        <p>
+            Here’s an example. Say you log into your Facebook account, and you are greeted with the latest updates in
+            your
+            News Feed. They’re not going to be the same updates that you saw yesterday.
+        </p>
+        <p>
+            How did the page change? Did a Facebook employee manually edit the page to update your news feed? Of course
+            not.
+            A script on the Facebook back-end would have received the updates and re-generated the front-end
+            accordingly.
+            Back-end scripts are written in many different coding languages and frameworks, such as…
+        </p>
+        <p>
+            PHP
+        </p>
+        <p>
+            Ruby on Rails
+        </p>
+        <p>
+            ASP.NET
+        </p>
+        <p>
+            Perl
+        </p>
+        <p>
+            Java
+        </p>
+        <p>
+            Node.js
+        </p>
+        <p>
+            Python
+        </p>
+        <p>
+            Without going into more detail, that’s really all there is to web development. So now, here are the best
+            ways to
+            start learning it.
+        </p>
+    </div>
+</div>
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+-->
+<script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+<!--
+    <div id="main_header" class="bluish" >
+        <h1>Classwork 10th Feb-Webpage</h1>
+    </div>
+    <div id="main_contain" class="contain">
+        <div id="information" class="current">
+            <p>Student Name: {{ name }}</p>
+            <p>College: {{ school }}</p>
+            <p>Enrolled For: {{ edu }}</p>
+            <p>Specialization In: {{ Specs }}</p>
+        </div>
+        <div id="image" class="pic">
+            <img src="https://0.academia-photos.com/23631166/16350915/16737134/s200_sagar.alande.jpg" alt="Sagar Alande">
+        </div>
+    </div>
+    <div id="main_header" class="bluish" >
+        <h1>Classwork 17th Feb-Webpage</h1>
+    </div>
+    <div id="bootstrap-info" class="contain">
+        
+    </div>
+    -->
+</body>
+</html>
