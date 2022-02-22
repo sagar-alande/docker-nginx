@@ -1,9 +1,9 @@
 """A simple flask web app"""
 from flask import Flask, render_template
 
-
 from controllers.index_controller import IndexController
 from controllers.about_controller import AboutController
+from controllers.fpattern_controller import fpatternController
 from werkzeug.debug import DebuggedApplication
 
 app = Flask(__name__)
@@ -15,8 +15,12 @@ app.wsgi_app = DebuggedApplication(app.wsgi_app, True)
 def index_get():
     return IndexController.get()
 
+
 @app.route("/about", methods=['GET'])
 def about_get():
     return AboutController.get()
 
 
+@app.route("/fpat", methods=['GET'])
+def f_get():
+    return fpatternController.get()

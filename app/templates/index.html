@@ -20,9 +20,10 @@
             <nav class="navbar navbar-light">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">My First Bootstrap Site</a>
-                   <ul class="nav nav-pills">
+                    <ul class="nav nav-pills">
                         <li class="nav-item"><a href="/" class="nav-link active" aria-current="page">Home</a></li>
                         <li class="nav-item"><a href="/about" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="/fpat" class="nav-link">F-Pattern</a></li>
                     </ul>
                     <!--  <ul class="navbar-nav  nav-pills">
                           <li class="nav-item">
@@ -40,13 +41,16 @@
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="{{ url_for('static', filename='images/webdev.jpg') }}" class="d-block w-100 h-50" alt="...">
+                    <img src="{{ url_for('static', filename='images/webdev.jpg') }}" class="d-block w-100 h-50"
+                         alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="{{ url_for('static', filename='images/image.jpg') }}" class="d-block w-100 h-50" alt="...">
+                    <img src="{{ url_for('static', filename='images/image.jpg') }}" class="d-block w-100 h-50"
+                         alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="{{ url_for('static', filename='images/beawesome.jpg') }}" class="d-block w-100 h-50" alt="...">
+                    <img src="{{ url_for('static', filename='images/beawesome.jpg') }}" class="d-block w-100 h-50"
+                         alt="...">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
@@ -66,33 +70,39 @@
     <div class="row">
         <div class="col">
             <div class="card" style="width: 18rem;">
-                <img src="https://w0.peakpx.com/wallpaper/273/573/HD-wallpaper-wikipedia-media-widescreen-logo-awesome-black-wiki-useful.jpg" class="card-img-top" alt="...">
+                <img src="https://w0.peakpx.com/wallpaper/273/573/HD-wallpaper-wikipedia-media-widescreen-logo-awesome-black-wiki-useful.jpg"
+                     class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Wikipedia</h5>
                     <p class="card-text">Overview about Web Systems Development</p>
-                    <a href="https://en.wikipedia.org/wiki/Web_development" class="btn btn-primary" target="_blank">Read More</a>
+                    <a href="https://en.wikipedia.org/wiki/Web_development" class="btn btn-primary" target="_blank">Read
+                        More</a>
                 </div>
             </div>
 
         </div>
         <div class="col">
             <div class="card" style="width: 18rem;">
-                <img src="https://woc.aises.org/sites/default/files/styles/image730x495/public/March2020-Student-Illo-BLOGPOST-FNL.jpg?itok=sfPCAQLh" class="card-img-top" alt="...">
+                <img src="https://woc.aises.org/sites/default/files/styles/image730x495/public/March2020-Student-Illo-BLOGPOST-FNL.jpg?itok=sfPCAQLh"
+                     class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">NJIT Offering</h5>
                     <p class="card-text">Details about NJIT's graduate certificate in WSD</p>
-                    <a href="https://www5.njit.edu/graduatestudies/degree-programs/graduatecertificates/web-systems-development-cert/" class="btn btn-primary" target="_blank">Visit NJIT</a>
+                    <a href="https://www5.njit.edu/graduatestudies/degree-programs/graduatecertificates/web-systems-development-cert/"
+                       class="btn btn-primary" target="_blank">Visit NJIT</a>
                 </div>
             </div>
 
         </div>
         <div class="col">
             <div class="card" style="width: 18rem;">
-                <img src="https://www.pngitem.com/pimgs/m/36-368629_a-person-studying-with-a-pile-of-books.png" class="card-img-top" alt="...">
+                <img src="https://www.pngitem.com/pimgs/m/36-368629_a-person-studying-with-a-pile-of-books.png"
+                     class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Syllabus</h5>
                     <p class="card-text">Complete Syllabus document for CS601 Spring 2022</p>
-                    <a href="{{ url_for('static', filename='files/IS601 Syllabus - Spring 2022 002.docx') }}" class="btn btn-primary" download>Download</a>
+                    <a href="{{ url_for('static', filename='files/IS601 Syllabus - Spring 2022 002.docx') }}"
+                       class="btn btn-primary" download>Download</a>
                 </div>
             </div>
 
